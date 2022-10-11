@@ -1,0 +1,48 @@
+const {
+  isConsumn,
+  isVowel,
+  isVowels,
+  isConsumns,
+  getInitialName,
+} = require("../src/letter");
+
+describe("Test unit letter method", () => {
+  it("should method vowel return true", () => {
+    expect(isVowel("a")).toEqual(true);
+    expect(isVowel("A")).toEqual(true);
+  });
+
+  it("should method vowel return false", () => {
+    expect(isVowel("b")).toEqual(false);
+  });
+
+  it("should method vowels return array of boolean", () => {
+    const letterSample = ["a", "c", "e"];
+    const arrayExpected = [true, false, true];
+    const vowels = isVowels(letterSample);
+    expect(vowels).toEqual(arrayExpected);
+  });
+
+  it("should method consumn return true", () => {
+    expect(isConsumn("b")).toEqual(true);
+    expect(isConsumn("B")).toEqual(true);
+  });
+
+  it("should method consumn return false", () => {
+    expect(isConsumn("a")).toEqual(false);
+  });
+
+  it("should method consumns return array of boolean", () => {
+    const letterSample = ["a", "c", "e", "f"];
+    const arrayExpected = [false, true, false, true];
+    const consumns = isConsumns(letterSample);
+    expect(consumns).toEqual(arrayExpected);
+  });
+
+  it('should method getIntialName return initial', () => {
+    const fullName = 'john snow';
+    const initialExpected = 'J.S';
+    const initial = getInitialName(fullName);
+    expect(initial).toEqual(initialExpected);
+  });
+});

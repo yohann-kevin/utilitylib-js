@@ -1,0 +1,15 @@
+{
+  "name": "utilitylib-js",
+  "version": "1.0.0",
+  "description": "little util library",
+  "main": "main.js",
+  "scripts": {
+    "test": "npx jest --collectCoverage",
+    "coverage": "npx jest --collect-coverage"
+  },
+  "author": "PERRIGUEY Yohann  <yo44prg@icoud.com> (https://github.com/yohann-kevin)",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
