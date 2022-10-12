@@ -9,7 +9,7 @@
   },
   "author": "PERRIGUEY Yohann  <yo44prg@icoud.com> (https://github.com/yohann-kevin)",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.1.2"
   }
 }
