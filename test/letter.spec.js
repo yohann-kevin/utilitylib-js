@@ -39,10 +39,22 @@ describe("Test unit letter method", () => {
     expect(consumns).toEqual(arrayExpected);
   });
 
-  it('should method getIntialName return initial', () => {
+  it('should method getIntialName return initial without separator', () => {
     const fullName = 'john snow';
-    const initialExpected = 'J.S';
+    const initialExpected = 'J S';
     const initial = getInitialName(fullName);
     expect(initial).toEqual(initialExpected);
+  });
+
+  it('should method getIntialName return initial with separator', () => {
+    const fullName = 'john snow';
+    const initialExpectedOne = 'J.S';
+    const initialExpectedTwo = 'J-S';
+
+    const initialOne = getInitialName(fullName, '.');
+    const initialTwo = getInitialName(fullName, '-');
+    
+    expect(initialOne).toEqual(initialExpectedOne);
+    expect(initialTwo).toEqual(initialExpectedTwo);
   });
 });

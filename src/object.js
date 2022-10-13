@@ -10,7 +10,7 @@ const clone = (objectToClone) => {
 
 const clones = (objectsToClone) => {
   return objectsToClone.map((object) => {
-    return clone(object);
+    return clone(object); 
   });
 };
 
@@ -20,7 +20,7 @@ const isEmpty = (object) => {
 
 const merge = (object, objectToMerge) => {
   for (let key in objectToMerge) object[key] = objectToMerge[key];
-  return object
+  return object;
 };
 
 module.exports = { isEqual, clone, clones, isEmpty, merge };

@@ -39,11 +39,17 @@ const isConsumns = (letters) => {
   });
 };
 
-const getInitialName = (fullname) => {
+/**
+ * get initial in full name
+ * @param {string} fullname fullname 'jhon snow'
+ * @param {string} separator separtor is string for separate initial default ' '
+ * @returns {string} return initial J S
+ */
+const getInitialName = (fullname, separator = ' ') => {
   const nameSplitted = fullname.split(' ');
   const firstnameLetter = nameSplitted[0][0].toUpperCase();
   const lastNameLetter = nameSplitted[1][0].toUpperCase();
-  return `${firstnameLetter}.${lastNameLetter}`;
+  return `${firstnameLetter}${separator}${lastNameLetter}`;
 };
 
 module.exports = {
