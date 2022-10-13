@@ -46,7 +46,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: '12'
+        node-version: '16.x'
     - run: npm install
     - uses: paambaati/codeclimate-action@v3.0.0
       env:
