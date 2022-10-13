@@ -2,6 +2,7 @@
   "name": "utilitylib-js",
   "version": "1.0.0",
   "description": "little util library",
+  "keywords": ["util", "javascript", "library", "utilities", "modules"],
   "main": "main.js",
   "scripts": {
     "test": "npx jest --collectCoverage",
@@ -11,6 +12,14 @@
     "docs": "node ./doc/doc.js"
   },
   "author": "PERRIGUEY Yohann  <yo44prg@icoud.com> (https://github.com/yohann-kevin)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohann-kevin/utilitylib-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yohann-kevin/utilitylib-js/issues"
+  },
+  "homepage": "https://github.com/yohann-kevin/utilitylib-js#readme",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.25.0",
