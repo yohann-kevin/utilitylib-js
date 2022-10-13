@@ -1,4 +1,3 @@
-const { utimes } = require("fs");
 const { isEqual, clone, clones, isEmpty, merge } = require("../src/object");
 
 describe("Test unit object method,", () => {
