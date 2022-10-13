@@ -1,26 +1,23 @@
-const isEqual = (objectOne, objectTwo) => {
-  return JSON.stringify(objectOne) === JSON.stringify(objectTwo);
-};
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
+const isEqual = (objectOne, objectTwo) => JSON.stringify(objectOne) === JSON.stringify(objectTwo);
 
 const clone = (objectToClone) => {
   const objectCloned = {};
-  for (let key in objectToClone) objectCloned[key] = objectToClone[key];
+  for (const key in objectToClone) objectCloned[key] = objectToClone[key];
   return objectCloned;
 };
 
-const clones = (objectsToClone) => {
-  return objectsToClone.map((object) => {
-    return clone(object); 
-  });
-};
+const clones = (objectsToClone) => objectsToClone.map((object) => clone(object));
 
-const isEmpty = (object) => {
-  return Object.keys(object).length === 0;
-};
+const isEmpty = (object) => Object.keys(object).length === 0;
 
 const merge = (object, objectToMerge) => {
-  for (let key in objectToMerge) object[key] = objectToMerge[key];
+  const newObject = object;
+  for (const key in objectToMerge) newObject[key] = objectToMerge[key];
   return object;
 };
 
-module.exports = { isEqual, clone, clones, isEmpty, merge };
+module.exports = {
+  isEqual, clone, clones, isEmpty, merge,
+};

@@ -4,12 +4,10 @@ const merge = (array, arrayToMerge) => {
   return arrayMerged;
 };
 
-const clone = (array) => {
-  return array.map((elmnt) => elmnt);
-};
+const clone = (array) => array.map((elmnt) => elmnt);
 
-const diff = (arrayOne, arrayTwo) => {
-  return arrayOne.filter(elmnt => !arrayTwo.includes(elmnt)).concat(arrayTwo.filter(elmnt => !arrayOne.includes(elmnt)));
-};
+const diff = (arrayOne, arrayTwo) => arrayOne
+  .filter((elmnt) => !arrayTwo.includes(elmnt))
+  .concat(arrayTwo.filter((elmnt) => !arrayOne.includes(elmnt)));
 
 module.exports = { merge, clone, diff };

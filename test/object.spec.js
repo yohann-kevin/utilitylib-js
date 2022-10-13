@@ -4,7 +4,7 @@ const { isEqual, clone, clones, isEmpty, merge } = require("../src/object");
 describe("Test unit object method,", () => {
   it("should method isEqual return true if two object is equal", () => {
     const obj1 = {
-      name: "Snow",
+      name: 'Snow',
       age: 20,
       location: {
         city: "NY",

@@ -7,5 +7,5 @@ module.exports = {
   letter,
   object,
   number,
-  array
-}
+  array,
+};
