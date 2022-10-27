@@ -46,6 +46,13 @@ const merge = (object, objectToMerge) => {
   return object;
 };
 
+/**
+ * check if entry is object
+ * @param {any} object value for check is object
+ * @returns {boolean} return true if value is a object
+ */
+const isObject = (object) => typeof object === 'object' && !object.length;
+
 module.exports = {
-  isEqual, clone, clones, isEmpty, merge,
+  isEqual, clone, clones, isEmpty, merge, isObject
 };

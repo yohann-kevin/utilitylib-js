@@ -1,4 +1,4 @@
-const { randomNum, isPrime, even, odd } = require('../src/number');
+const { randomNum, isPrime, even, odd, isNumber } = require('../src/number');
 
 describe('Test unit number method', () => { 
   it('should method randomNum return reandom number beetween 5 and 10', () => {
@@ -36,5 +36,16 @@ describe('Test unit number method', () => {
 
     expect(numberIsOdd).toEqual(true);
     expect(numberIsNotOdd).toEqual(false);
+  });
+
+  it('should method is number return true if entry is number', () => {
+    expect(isNumber(2)).toBeTruthy();
+    expect(isNumber(2.2)).toBeTruthy();
+  });
+
+  it('should method is number return false if entry is not a number', () => {
+    expect(isNumber('string')).toBeFalsy();
+    expect(isNumber({ object: 'sample' })).toBeFalsy();
+    expect(isNumber(['array', 'sample'])).toBeFalsy();
   });
 })

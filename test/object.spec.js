@@ -1,4 +1,4 @@
-const { isEqual, clone, clones, isEmpty, merge } = require("../src/object");
+const { isEqual, clone, clones, isEmpty, merge, isObject } = require("../src/object");
 
 describe("Test unit object method,", () => {
   it("should method isEqual return true if two object is equal", () => {
@@ -140,5 +140,24 @@ describe("Test unit object method,", () => {
     const objMerged = merge(obj, objToMerge);
 
     expect(objMerged).toEqual(objMergedExpected);
+  });
+
+  it('should method is object return true if entry is object', () => {
+    const obj = {
+      name: "Snow",
+      age: 20,
+      location: {
+        city: "NY",
+        state: "NY",
+      },
+    };
+
+    expect(isObject(obj)).toBeTruthy();
+  });
+
+  it('should method is object return false if entry is not a object', () => {
+    expect(isObject('string')).toBeFalsy();
+    expect(isObject(2)).toBeFalsy();
+    expect(isObject(['string', 'sample'])).toBeFalsy();
   });
 });

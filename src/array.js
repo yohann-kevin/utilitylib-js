@@ -27,4 +27,11 @@ const diff = (arrayOne, arrayTwo) => arrayOne
   .filter((elmnt) => !arrayTwo.includes(elmnt))
   .concat(arrayTwo.filter((elmnt) => !arrayOne.includes(elmnt)));
 
-module.exports = { merge, clone, diff };
+/**
+ * check if entry is array
+ * @param {any} array value for check is array
+ * @returns {boolean} return true if value is a array
+ */
+const isArray = (array) => typeof array === 'object' && array.length;
+
+module.exports = { merge, clone, diff, isArray };

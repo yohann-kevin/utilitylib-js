@@ -4,6 +4,7 @@ const {
   isVowels,
   isConsumns,
   getInitialName,
+  isString
 } = require("../src/letter");
 
 describe("Test unit letter method", () => {
@@ -56,5 +57,16 @@ describe("Test unit letter method", () => {
     
     expect(initialOne).toEqual(initialExpectedOne);
     expect(initialTwo).toEqual(initialExpectedTwo);
+  });
+
+  it('should method is string return true if entry is string', () => {
+    expect(isString('string')).toBeTruthy();
+    expect(isString('s')).toBeTruthy();
+  });
+
+  it('should method is string return false if entry is not a string', () => {
+    expect(isString(2)).toBeFalsy();
+    expect(isString({ object: 'sample' })).toBeFalsy();
+    expect(isString(['array', 'sample'])).toBeFalsy();
   });
 });

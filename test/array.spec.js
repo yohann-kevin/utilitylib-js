@@ -1,4 +1,4 @@
-const { merge, clone, diff } = require('../src/array');
+const { merge, clone, diff, isArray } = require('../src/array');
 
 describe('Test unit method array', () => {
   it('should method merge return array merged', () => {
@@ -28,5 +28,16 @@ describe('Test unit method array', () => {
     const difference = diff(arrayOne, arrayTwo);
 
     expect(difference).toEqual(expect.arrayContaining(diffExpected));
+  });
+
+  it('should method is array return true if entry is array', () => {
+    expect(isArray(['string', 'sample'])).toBeTruthy();
+    expect(isArray([2, 2])).toBeTruthy();
+  });
+
+  it('should method is array return false if entry is not a array', () => {
+    expect(isArray('string')).toBeFalsy();
+    expect(isArray(2)).toBeFalsy();
+    expect(isArray({ object: 'sample' })).toBeFalsy();
   });
 });

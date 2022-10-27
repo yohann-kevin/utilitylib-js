@@ -36,6 +36,13 @@ const even = (number) => {
  */
 const odd = (number) => !even(number);
 
+/**
+ * check if entry is number
+ * @param {any} number value for check is number
+ * @returns {boolean} return true if value is a number
+ */
+const isNumber = (number) => typeof number === 'number';
+
 module.exports = {
-  randomNum, isPrime, even, odd,
+  randomNum, isPrime, even, odd, isNumber
 };

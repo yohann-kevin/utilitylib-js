@@ -42,10 +42,18 @@ const getInitialName = (fullname, separator = ' ') => {
   return `${firstnameLetter}${separator}${lastNameLetter}`;
 };
 
+/**
+ * check if entry is string
+ * @param {any} string value for check is string
+ * @returns {boolean} return true if value is a string
+ */
+const isString = (string) => typeof string === 'string';
+
 module.exports = {
   isVowel,
   isVowels,
   isConsumn,
   isConsumns,
   getInitialName,
+  isString
 };
