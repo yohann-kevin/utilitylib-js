@@ -9,11 +9,12 @@ function generateDoc() {
   });
 }
 
-// generate readme woth template and doc
+// generate readme with template and doc
 function generateReadme() {
   generateDoc();
   const readmeData = fs.readFileSync('./doc/readme-template.md', 'utf8');
   const docData = fs.readFileSync('./doc/doc.md');
+  fs.unlinkSync('README.md');
   fs.writeFileSync('README.md', readmeData);
   fs.appendFileSync('README.md', docData);
 }

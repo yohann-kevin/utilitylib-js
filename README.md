@@ -48,6 +48,15 @@ clone(objectToClone);
 <dt><a href="#diff">diff(arrayOne, arrayTwo)</a> ⇒ <code>Array</code></dt>
 <dd><p>Compare two array and return diff</p>
 </dd>
+<dt><a href="#isArray">isArray(array)</a> ⇒ <code>boolean</code></dt>
+<dd><p>check if entry is array</p>
+</dd>
+<dt><a href="#removeAll">removeAll(array, values)</a> ⇒ <code>Array</code></dt>
+<dd><p>remove values in array</p>
+</dd>
+<dt><a href="#remove">remove(array, ...values)</a> ⇒ <code>Array</code></dt>
+<dd><p>remove values in array</p>
+</dd>
 <dt><a href="#isVowel">isVowel(letter)</a> ⇒ <code>boolean</code></dt>
 <dd><p>check if letter is vowel</p>
 </dd>
@@ -63,6 +72,9 @@ clone(objectToClone);
 <dt><a href="#getInitialName">getInitialName(fullname, separator)</a> ⇒ <code>string</code></dt>
 <dd><p>get initial in full name</p>
 </dd>
+<dt><a href="#isString">isString(string)</a> ⇒ <code>boolean</code></dt>
+<dd><p>check if entry is string</p>
+</dd>
 <dt><a href="#randomNum">randomNum(min, max)</a> ⇒ <code>number</code></dt>
 <dd><p>generate random num beetween two number</p>
 </dd>
@@ -74,6 +86,9 @@ clone(objectToClone);
 </dd>
 <dt><a href="#odd">odd(number)</a> ⇒ <code>boolean</code></dt>
 <dd><p>check if number is odd</p>
+</dd>
+<dt><a href="#isNumber">isNumber(number)</a> ⇒ <code>boolean</code></dt>
+<dd><p>check if entry is number</p>
 </dd>
 <dt><a href="#isEqual">isEqual(objectOne, objectTwo)</a> ⇒ <code>boolean</code></dt>
 <dd><p>compare object equality</p>
@@ -89,6 +104,9 @@ clone(objectToClone);
 </dd>
 <dt><a href="#merge">merge(object, objectToMerge)</a> ⇒ <code>object</code></dt>
 <dd><p>merge two object</p>
+</dd>
+<dt><a href="#isObject">isObject(object)</a> ⇒ <code>boolean</code></dt>
+<dd><p>check if entry is object</p>
 </dd>
 </dl>
 
@@ -129,6 +147,44 @@ Compare two array and return diff
 | --- | --- | --- |
 | arrayOne | <code>Array</code> | first array |
 | arrayTwo | <code>Array</code> | array for comparaison |
+
+<a name="isArray"></a>
+
+## isArray(array) ⇒ <code>boolean</code>
+check if entry is array
+
+**Kind**: global function  
+**Returns**: <code>boolean</code> - return true if value is a array  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>any</code> | value for check is array |
+
+<a name="removeAll"></a>
+
+## removeAll(array, values) ⇒ <code>Array</code>
+remove values in array
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - return array without value to remove  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>Array</code> | array contain values for check |
+| values | <code>Array</code> | array of values to remove |
+
+<a name="remove"></a>
+
+## remove(array, ...values) ⇒ <code>Array</code>
+remove values in array
+
+**Kind**: global function  
+**Returns**: <code>Array</code> - return array without value to remove  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>Array</code> | array contain values for check |
+| ...values | <code>any</code> | any values to remove |
 
 <a name="isVowel"></a>
 
@@ -191,6 +247,18 @@ get initial in full name
 | fullname | <code>string</code> |  | fullname 'jhon snow' |
 | separator | <code>string</code> | <code>&quot; &quot;</code> | separtor is string for separate initial default ' ' |
 
+<a name="isString"></a>
+
+## isString(string) ⇒ <code>boolean</code>
+check if entry is string
+
+**Kind**: global function  
+**Returns**: <code>boolean</code> - return true if value is a string  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| string | <code>any</code> | value for check is string |
+
 <a name="randomNum"></a>
 
 ## randomNum(min, max) ⇒ <code>number</code>
@@ -239,6 +307,18 @@ check if number is odd
 | Param | Type | Description |
 | --- | --- | --- |
 | number | <code>number</code> | number for check |
+
+<a name="isNumber"></a>
+
+## isNumber(number) ⇒ <code>boolean</code>
+check if entry is number
+
+**Kind**: global function  
+**Returns**: <code>boolean</code> - return true if value is a number  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>any</code> | value for check is number |
 
 <a name="isEqual"></a>
 
@@ -301,4 +381,16 @@ merge two object
 | --- | --- | --- |
 | object | <code>object</code> | one object |
 | objectToMerge | <code>object</code> | object for merge |
+
+<a name="isObject"></a>
+
+## isObject(object) ⇒ <code>boolean</code>
+check if entry is object
+
+**Kind**: global function  
+**Returns**: <code>boolean</code> - return true if value is a object  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| object | <code>any</code> | value for check is object |
 
