@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable array-callback-return */
 /**
  * merge two array
  * @param {Array} array first array
@@ -40,11 +42,9 @@ const isArray = (array) => typeof array === 'object' && array.length;
  * @param {Array} values array of values to remove
  * @returns {Array} return array without value to remove
  */
-const removeAll = (array, values) => {
-  return array.filter((arrayValue) => {
-    if (values.indexOf(arrayValue) === -1) return arrayValue;
-  });
-};
+const removeAll = (array, values) => array.filter((arrayValue) => {
+  if (values.indexOf(arrayValue) === -1) return arrayValue;
+});
 
 /**
  * remove values in array
@@ -52,15 +52,13 @@ const removeAll = (array, values) => {
  * @param  {...any} values any values to remove
  * @returns {Array} return array without value to remove
  */
-const remove = (array, ...values) => {
-  return removeAll(array, values);
-};
+const remove = (array, ...values) => removeAll(array, values);
 
-module.exports = { 
-  merge, 
-  clone, 
-  diff, 
-  isArray, 
-  removeAll, 
-  remove 
+module.exports = {
+  merge,
+  clone,
+  diff,
+  isArray,
+  removeAll,
+  remove,
 };

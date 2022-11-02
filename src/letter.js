@@ -55,5 +55,5 @@ module.exports = {
   isConsumn,
   isConsumns,
   getInitialName,
-  isString
+  isString,
 };

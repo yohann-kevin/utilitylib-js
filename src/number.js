@@ -44,5 +44,5 @@ const odd = (number) => !even(number);
 const isNumber = (number) => typeof number === 'number';
 
 module.exports = {
-  randomNum, isPrime, even, odd, isNumber
+  randomNum, isPrime, even, odd, isNumber,
 };

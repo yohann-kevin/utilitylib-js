@@ -54,5 +54,5 @@ const merge = (object, objectToMerge) => {
 const isObject = (object) => typeof object === 'object' && !object.length;
 
 module.exports = {
-  isEqual, clone, clones, isEmpty, merge, isObject
+  isEqual, clone, clones, isEmpty, merge, isObject,
 };
