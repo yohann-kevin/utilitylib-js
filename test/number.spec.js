@@ -15,11 +15,16 @@ describe('Test unit number method', () => {
     const twoIsPrime = isPrime(2);
     const eightIsNotPrime = isPrime(8);
     const longNumberIsPrime = isPrime(22091);
+    const veryLongNumberNotPrime = isPrime(100000000000000000**10);
+    const veryLongNumberIsPrime = isPrime(1000001333);
 
-    expect(oneIsNotPrime).toEqual(false);
-    expect(twoIsPrime).toEqual(true);
-    expect(eightIsNotPrime).toEqual(false);
-    expect(longNumberIsPrime).toEqual(true);
+
+    expect(oneIsNotPrime).toBeFalsy();
+    expect(twoIsPrime).toBeTruthy();
+    expect(eightIsNotPrime).toBeFalsy();
+    expect(longNumberIsPrime).toBeTruthy();
+    expect(veryLongNumberNotPrime).toBeFalsy();
+    expect(veryLongNumberIsPrime).toBeTruthy();
   });
 
   it('should method even return true if number is even', () => {

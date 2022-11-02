@@ -34,4 +34,33 @@ const diff = (arrayOne, arrayTwo) => arrayOne
  */
 const isArray = (array) => typeof array === 'object' && array.length;
 
-module.exports = { merge, clone, diff, isArray };
+/**
+ * remove values in array
+ * @param {Array} array array contain values for check
+ * @param {Array} values array of values to remove
+ * @returns {Array} return array without value to remove
+ */
+const removeAll = (array, values) => {
+  return array.filter((arrayValue) => {
+    if (values.indexOf(arrayValue) === -1) return arrayValue;
+  });
+};
+
+/**
+ * remove values in array
+ * @param {Array} array array contain values for check
+ * @param  {...any} values any values to remove
+ * @returns {Array} return array without value to remove
+ */
+const remove = (array, ...values) => {
+  return removeAll(array, values);
+};
+
+module.exports = { 
+  merge, 
+  clone, 
+  diff, 
+  isArray, 
+  removeAll, 
+  remove 
+};
