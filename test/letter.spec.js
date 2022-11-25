@@ -7,7 +7,8 @@ const {
   isString,
   toKebabCase,
   toSnakeCase,
-  camelCaseToOtherCase
+  camelCaseToOtherCase,
+  toPascalCase
 } = require("../src/letter");
 
 describe("Test unit letter method", () => {
@@ -97,5 +98,13 @@ describe("Test unit letter method", () => {
 
     expect(resultSnakeCase).toEqual('test_test');
     expect(resultKebabCase).toEqual('test-test');
+  });
+
+  it('should method toPascalCase convert value in camelCase to PascalCase', () => {
+    const valueSample = 'testTest';
+
+    const result = toPascalCase(valueSample);
+
+    expect(result).toEqual('TestTest');
   });
 });

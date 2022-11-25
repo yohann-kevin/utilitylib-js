@@ -71,6 +71,13 @@ const toKebabCase = (value) => camelCaseToOtherCase(value, '-');
  */
 const toSnakeCase = (value) => camelCaseToOtherCase(value, '_');
 
+/**
+ * convert string in camelCase to PascalCase
+ * @param {string} value value for convert
+ * @returns {string} return value in PascalCase
+ */
+const toPascalCase = (value) => `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
+
 module.exports = {
   isVowel,
   isVowels,
@@ -81,4 +88,5 @@ module.exports = {
   camelCaseToOtherCase,
   toKebabCase,
   toSnakeCase,
+  toPascalCase,
 };
