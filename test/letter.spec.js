@@ -4,7 +4,10 @@ const {
   isVowels,
   isConsumns,
   getInitialName,
-  isString
+  isString,
+  toKebabCase,
+  toSnakeCase,
+  camelCaseToOtherCase
 } = require("../src/letter");
 
 describe("Test unit letter method", () => {
@@ -68,5 +71,31 @@ describe("Test unit letter method", () => {
     expect(isString(2)).toBeFalsy();
     expect(isString({ object: 'sample' })).toBeFalsy();
     expect(isString(['array', 'sample'])).toBeFalsy();
+  });
+
+  it('should method toKebabCase convert value in camelCase to kebab-case', () => {
+    const valueSample = 'testTest';
+
+    const result = toKebabCase(valueSample);
+
+    expect(result).toEqual('test-test');
+  });
+
+  it('should method toSnakeCase convert value in camelCase to snake_case', () => {
+    const valueSample = 'testTest';
+
+    const result = toSnakeCase(valueSample);
+
+    expect(result).toEqual('test_test');
+  });
+
+  it('should method camelCaseToOtherCase convert value in camelCase to other case with separator', () => {
+    const valueSample = 'testTest';
+
+    const resultSnakeCase = camelCaseToOtherCase(valueSample, '_');
+    const resultKebabCase = camelCaseToOtherCase(valueSample, '-');
+
+    expect(resultSnakeCase).toEqual('test_test');
+    expect(resultKebabCase).toEqual('test-test');
   });
 });

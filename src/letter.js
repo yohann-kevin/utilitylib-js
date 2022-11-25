@@ -49,6 +49,28 @@ const getInitialName = (fullname, separator = ' ') => {
  */
 const isString = (string) => typeof string === 'string';
 
+/**
+ * convert value in camelCase to kebab-case or snake_case
+ * @param {string} value value for convert
+ * @param {string} separator separator beetween words
+ * @returns {string} return value in kebab-case or snake_case
+ */
+const camelCaseToOtherCase = (value, separator) => value.replace(/([A-Z])/g, ' $1').split(' ').join(separator).toLowerCase();
+
+/**
+ * convert string in camelCase to kebab-case
+ * @param {string} value value for convert
+ * @returns {string} return value in kebab-case
+ */
+const toKebabCase = (value) => camelCaseToOtherCase(value, '-');
+
+/**
+ * convert string in camelCase to kebab-case
+ * @param {string} value value for convert
+ * @returns {string} return value in kebab-case
+ */
+const toSnakeCase = (value) => camelCaseToOtherCase(value, '_');
+
 module.exports = {
   isVowel,
   isVowels,
@@ -56,4 +78,7 @@ module.exports = {
   isConsumns,
   getInitialName,
   isString,
+  camelCaseToOtherCase,
+  toKebabCase,
+  toSnakeCase,
 };
