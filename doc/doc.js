@@ -4,16 +4,17 @@ const fs = require('fs');
 
 // generate doc with jsdoc
 function generateDoc() {
-  jsdoc2md.render({ files: 'src/*.js' }).then((data) => {
+  jsdoc2md.render({ files: 'src/*.js', separators: true }).then((data) => {
     fs.writeFileSync('./doc/doc.md', data);
   });
 }
 
-// generate readme woth template and doc
+// generate readme with template and doc
 function generateReadme() {
   generateDoc();
   const readmeData = fs.readFileSync('./doc/readme-template.md', 'utf8');
   const docData = fs.readFileSync('./doc/doc.md');
+  fs.unlinkSync('README.md');
   fs.writeFileSync('README.md', readmeData);
   fs.appendFileSync('README.md', docData);
 }
