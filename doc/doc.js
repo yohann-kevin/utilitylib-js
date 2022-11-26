@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // generate doc with jsdoc
 function generateDoc() {
-  jsdoc2md.render({ files: 'src/*.js' }).then((data) => {
+  jsdoc2md.render({ files: 'src/*.js', separators: true }).then((data) => {
     fs.writeFileSync('./doc/doc.md', data);
   });
 }

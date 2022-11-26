@@ -3,16 +3,30 @@
 
 /**
  * compare object equality
+ *
+ * @since 1.0.0
+ * @category Object
  * @param {object} objectOne first object to compare
  * @param {object} objectTwo other object for comparaison
  * @returns {boolean} return true if two object is equal
+ * @example
+ *
+ * isEqual({ name: 'test' }, { name: 'test' })
+ * // => true
  */
 const isEqual = (objectOne, objectTwo) => JSON.stringify(objectOne) === JSON.stringify(objectTwo);
 
 /**
  * clone object
+ *
+ * @since 1.0.0
+ * @category Object
  * @param {object} objectToClone object to clone
  * @returns {object} new instance of this object
+ * @example
+ *
+ * clone({ name: 'test' })
+ * // => { name: 'test' }
  */
 const clone = (objectToClone) => {
   const objectCloned = {};
@@ -22,23 +36,44 @@ const clone = (objectToClone) => {
 
 /**
  * clone all object in array
+ *
+ * @since 1.0.0
+ * @category Object
  * @param {Array<object>} objectsToClone array of object
  * @returns {Array<object>} return array of object cloned
+ * @example
+ *
+ * clones([{ name: 'test' }])
+ * // => [{ name: 'test' }]
  */
 const clones = (objectsToClone) => objectsToClone.map((object) => clone(object));
 
 /**
  * check if object is empty
+ *
+ * @since 1.0.0
+ * @category Object
  * @param {object} object object for check
  * @returns {boolean} return true if object is empty
+ * @example
+ *
+ * isEmpty({})
+ * // => true
  */
 const isEmpty = (object) => Object.keys(object).length === 0;
 
 /**
  * merge two object
+ *
+ * @since 1.0.0
+ * @category Object
  * @param {object} object one object
  * @param {object} objectToMerge object for merge
  * @returns {object} return merged object
+ * @example
+ *
+ * merge({ name: 'snow' }, { firstname: 'jhon' })
+ * // => { name: 'snow', firstname: 'jhon' }
  */
 const merge = (object, objectToMerge) => {
   const newObject = object;
@@ -48,8 +83,15 @@ const merge = (object, objectToMerge) => {
 
 /**
  * check if entry is object
+ *
+ * @since 1.1.0
+ * @category Object
  * @param {any} object value for check is object
  * @returns {boolean} return true if value is a object
+ * @exmaple
+ *
+ * isObject({ name: 'test' })
+ * // => true
  */
 const isObject = (object) => typeof object === 'object' && !object.length;
 
