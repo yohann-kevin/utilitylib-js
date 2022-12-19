@@ -6,7 +6,7 @@
  * @param {number} min min value
  * @param {number} max max value
  * @returns {number} return number generated beetween two values
- * @exmaple
+ * @example
  *
  * randomNum(1, 8)
  * // => 6

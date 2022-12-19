@@ -8,13 +8,15 @@ const {
   toKebabCase,
   toSnakeCase,
   camelCaseToOtherCase,
-  toPascalCase
+  toPascalCase,
+  uuid
 } = require("../src/letter");
 
 describe("Test unit letter method", () => {
   it("should method vowel return true", () => {
     expect(isVowel("a")).toEqual(true);
     expect(isVowel("A")).toEqual(true);
+    expect(isVowel("é")).toEqual(true);
   });
 
   it("should method vowel return false", () => {
@@ -106,5 +108,10 @@ describe("Test unit letter method", () => {
     const result = toPascalCase(valueSample);
 
     expect(result).toEqual('TestTest');
+  });
+
+  it('should method uuid return a uuid', () => {
+    const id = uuid();
+    expect(id.length).toEqual(36);
   });
 });

@@ -22,6 +22,9 @@
 <dt><a href="#remove">remove(array, ...values)</a> ⇒ <code>Array</code></dt>
 <dd><p>remove values in array</p>
 </dd>
+<dt><a href="#uniq">uniq(array)</a> ⇒ <code>Array.&lt;any&gt;</code></dt>
+<dd><p>return array of uniq value work with array of object</p>
+</dd>
 <dt><a href="#randomNum">randomNum(min, max)</a> ⇒ <code>number</code></dt>
 <dd><p>generate random num beetween two number</p>
 </dd>
@@ -81,6 +84,9 @@
 </dd>
 <dt><a href="#toPascalCase">toPascalCase(value)</a> ⇒ <code>string</code></dt>
 <dd><p>convert string in camelCase to PascalCase</p>
+</dd>
+<dt><a href="#uuid">uuid()</a> ⇒ <code>string</code></dt>
+<dd><p>generate a uuid</p>
 </dd>
 </dl>
 
@@ -242,6 +248,29 @@ remove([1, 2, 3, 4], 1, 2)
 
 * * *
 
+<a name="uniq"></a>
+
+## uniq(array) ⇒ <code>Array.&lt;any&gt;</code>
+return array of uniq value work with array of object
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;any&gt;</code> - return array of uniq values  
+**Category**: Array  
+**Since**: 1.2.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>Array.&lt;any&gt;</code> | of values any type |
+
+**Example**  
+```js
+uniq([1, 2, 4, 5, 5, 123, 123, 132])
+
+// => [1, 2, 4, 5, 123, 132]
+```
+
+* * *
+
 <a name="randomNum"></a>
 
 ## randomNum(min, max) ⇒ <code>number</code>
@@ -250,8 +279,6 @@ generate random num beetween two number
 **Kind**: global function  
 **Returns**: <code>number</code> - return number generated beetween two values  
 **Category**: Number  
-**Exmaple**: randomNum(1, 8)
-// => 6  
 **Since**: 1.0.0  
 
 | Param | Type | Description |
@@ -259,6 +286,11 @@ generate random num beetween two number
 | min | <code>number</code> | min value |
 | max | <code>number</code> | max value |
 
+**Example**  
+```js
+randomNum(1, 8)
+// => 6
+```
 
 * * *
 
@@ -448,14 +480,17 @@ check if entry is object
 **Kind**: global function  
 **Returns**: <code>boolean</code> - return true if value is a object  
 **Category**: Object  
-**Exmaple**: isObject({ name: 'test' })
-// => true  
 **Since**: 1.1.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | object | <code>any</code> | value for check is object |
 
+**Example**  
+```js
+isObject({ name: 'test' })
+// => true
+```
 
 * * *
 
@@ -677,6 +712,23 @@ convert string in camelCase to PascalCase
 ```js
 toPascalCase('testTest')
 // => TestTest
+```
+
+* * *
+
+<a name="uuid"></a>
+
+## uuid() ⇒ <code>string</code>
+generate a uuid
+
+**Kind**: global function  
+**Returns**: <code>string</code> - return a uuid  
+**Category**: String  
+**Since**: 1.2.0  
+**Example**  
+```js
+uuid()
+// => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
 ```
 
 * * *

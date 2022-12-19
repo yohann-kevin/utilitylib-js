@@ -120,6 +120,9 @@ clone(objectToClone);
 <dt><a href="#toPascalCase">toPascalCase(value)</a> ⇒ <code>string</code></dt>
 <dd><p>convert string in camelCase to PascalCase</p>
 </dd>
+<dt><a href="#uuid">uuid()</a> ⇒ <code>string</code></dt>
+<dd><p>generate a uuid</p>
+</dd>
 </dl>
 
 <a name="isNumber"></a>
@@ -141,6 +144,9 @@ check if entry is number
 isNumber(5)
 // => true
 ```
+
+* * *
+
 <a name="merge"></a>
 
 ## merge(array, arrayToMerge) ⇒ <code>Array</code>
@@ -161,6 +167,9 @@ merge two array
 merge([1, 2], [3, 4])
 // => [1, 2, 3, 4]
 ```
+
+* * *
+
 <a name="clone"></a>
 
 ## clone(array) ⇒ <code>Array</code>
@@ -180,6 +189,9 @@ clone an array
 clone([1, 2])
 // => [1, 2]
 ```
+
+* * *
+
 <a name="diff"></a>
 
 ## diff(arrayOne, arrayTwo) ⇒ <code>Array</code>
@@ -200,6 +212,9 @@ Compare two array and return diff
 diff([1, 2], [1, 3])
 // => [2, 3]
 ```
+
+* * *
+
 <a name="isArray"></a>
 
 ## isArray(array) ⇒ <code>boolean</code>
@@ -219,6 +234,9 @@ check if entry is array
 isArray([1, 2])
 // => true
 ```
+
+* * *
+
 <a name="removeAll"></a>
 
 ## removeAll(array, values) ⇒ <code>Array</code>
@@ -239,6 +257,9 @@ remove values in array
 removeAll([1, 2, 2, 3, 4], [2, 4])
 // => [1, 3]
 ```
+
+* * *
+
 <a name="remove"></a>
 
 ## remove(array, ...values) ⇒ <code>Array</code>
@@ -259,6 +280,9 @@ remove values in array
 remove([1, 2, 3, 4], 1, 2)
 // => [3, 4]
 ```
+
+* * *
+
 <a name="randomNum"></a>
 
 ## randomNum(min, max) ⇒ <code>number</code>
@@ -267,14 +291,20 @@ generate random num beetween two number
 **Kind**: global function  
 **Returns**: <code>number</code> - return number generated beetween two values  
 **Category**: Number  
-**Exmaple**: randomNum(1, 8)
-// => 6  
 **Since**: 1.0.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | min | <code>number</code> | min value |
 | max | <code>number</code> | max value |
+
+**Example**  
+```js
+randomNum(1, 8)
+// => 6
+```
+
+* * *
 
 <a name="isPrime"></a>
 
@@ -295,6 +325,9 @@ check if number is prime
 isPrime(7)
 // => true
 ```
+
+* * *
+
 <a name="even"></a>
 
 ## even(number) ⇒ <code>boolean</code>
@@ -314,6 +347,9 @@ check if number is even
 even(4)
 // => true
 ```
+
+* * *
+
 <a name="odd"></a>
 
 ## odd(number) ⇒ <code>boolean</code>
@@ -333,6 +369,9 @@ check if number is odd
 odd(5)
 // => true
 ```
+
+* * *
+
 <a name="isEqual"></a>
 
 ## isEqual(objectOne, objectTwo) ⇒ <code>boolean</code>
@@ -353,6 +392,9 @@ compare object equality
 isEqual({ name: 'test' }, { name: 'test' })
 // => true
 ```
+
+* * *
+
 <a name="clone"></a>
 
 ## clone(objectToClone) ⇒ <code>object</code>
@@ -372,6 +414,9 @@ clone object
 clone({ name: 'test' })
 // => { name: 'test' }
 ```
+
+* * *
+
 <a name="clones"></a>
 
 ## clones(objectsToClone) ⇒ <code>Array.&lt;object&gt;</code>
@@ -391,6 +436,9 @@ clone all object in array
 clones([{ name: 'test' }])
 // => [{ name: 'test' }]
 ```
+
+* * *
+
 <a name="isEmpty"></a>
 
 ## isEmpty(object) ⇒ <code>boolean</code>
@@ -410,6 +458,9 @@ check if object is empty
 isEmpty({})
 // => true
 ```
+
+* * *
+
 <a name="merge"></a>
 
 ## merge(object, objectToMerge) ⇒ <code>object</code>
@@ -430,6 +481,9 @@ merge two object
 merge({ name: 'snow' }, { firstname: 'jhon' })
 // => { name: 'snow', firstname: 'jhon' }
 ```
+
+* * *
+
 <a name="isObject"></a>
 
 ## isObject(object) ⇒ <code>boolean</code>
@@ -438,13 +492,19 @@ check if entry is object
 **Kind**: global function  
 **Returns**: <code>boolean</code> - return true if value is a object  
 **Category**: Object  
-**Exmaple**: isObject({ name: 'test' })
-// => true  
 **Since**: 1.1.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | object | <code>any</code> | value for check is object |
+
+**Example**  
+```js
+isObject({ name: 'test' })
+// => true
+```
+
+* * *
 
 <a name="isVowel"></a>
 
@@ -465,6 +525,9 @@ check if letter is vowel
 isVowel('A')
 // => true
 ```
+
+* * *
+
 <a name="isVowels"></a>
 
 ## isVowels(letters) ⇒ <code>array</code>
@@ -484,6 +547,9 @@ check if letters have vowel or consumn
 isVowels(['a', 'c', 'e'])
 // => [true, false, true]
 ```
+
+* * *
+
 <a name="isConsumn"></a>
 
 ## isConsumn(letter) ⇒ <code>boolean</code>
@@ -503,6 +569,9 @@ check if letter is consumn
 isConsumn('b')
 // => true
 ```
+
+* * *
+
 <a name="isConsumns"></a>
 
 ## isConsumns(letters) ⇒ <code>array</code>
@@ -522,6 +591,9 @@ check if letters have consumn or vowel
 isConcumns(['a', 'b', 'c'])
 // => [false, true, true]
 ```
+
+* * *
+
 <a name="getInitialName"></a>
 
 ## getInitialName(fullname, separator) ⇒ <code>string</code>
@@ -542,6 +614,9 @@ get initial in full name
 getInitialName('jhon snow', '-')
 // => 'J-S'
 ```
+
+* * *
+
 <a name="isString"></a>
 
 ## isString(string) ⇒ <code>boolean</code>
@@ -561,6 +636,9 @@ check if entry is string
 isString('test')
 // => true
 ```
+
+* * *
+
 <a name="camelCaseToOtherCase"></a>
 
 ## camelCaseToOtherCase(value, separator) ⇒ <code>string</code>
@@ -581,6 +659,9 @@ convert value in camelCase to kebab-case or snake_case
 camelCaseToOtherCase('testTest', '_')
 // => test_test
 ```
+
+* * *
+
 <a name="toKebabCase"></a>
 
 ## toKebabCase(value) ⇒ <code>string</code>
@@ -600,6 +681,9 @@ convert string in camelCase to kebab-case
 toKebabCase('testTest')
 // => test-test
 ```
+
+* * *
+
 <a name="toSnakeCase"></a>
 
 ## toSnakeCase(value) ⇒ <code>string</code>
@@ -619,6 +703,9 @@ convert string in camelCase to kebab-case
 toSnakeCase('testTest')
 // => test_test
 ```
+
+* * *
+
 <a name="toPascalCase"></a>
 
 ## toPascalCase(value) ⇒ <code>string</code>
@@ -638,3 +725,23 @@ convert string in camelCase to PascalCase
 toPascalCase('testTest')
 // => TestTest
 ```
+
+* * *
+
+<a name="uuid"></a>
+
+## uuid() ⇒ <code>string</code>
+generate a uuid
+
+**Kind**: global function  
+**Returns**: <code>string</code> - return a uuid  
+**Category**: String  
+**Since**: 1.2.0  
+**Example**  
+```js
+uuid()
+// => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
+```
+
+* * *
+
