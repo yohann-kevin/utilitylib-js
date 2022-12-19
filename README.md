@@ -60,6 +60,9 @@ clone(objectToClone);
 <dt><a href="#remove">remove(array, ...values)</a> ⇒ <code>Array</code></dt>
 <dd><p>remove values in array</p>
 </dd>
+<dt><a href="#uniq">uniq(array)</a> ⇒ <code>Array.&lt;any&gt;</code></dt>
+<dd><p>return array of uniq value work with array of object</p>
+</dd>
 <dt><a href="#randomNum">randomNum(min, max)</a> ⇒ <code>number</code></dt>
 <dd><p>generate random num beetween two number</p>
 </dd>
@@ -279,6 +282,29 @@ remove values in array
 ```js
 remove([1, 2, 3, 4], 1, 2)
 // => [3, 4]
+```
+
+* * *
+
+<a name="uniq"></a>
+
+## uniq(array) ⇒ <code>Array.&lt;any&gt;</code>
+return array of uniq value work with array of object
+
+**Kind**: global function  
+**Returns**: <code>Array.&lt;any&gt;</code> - return array of uniq values  
+**Category**: Array  
+**Since**: 1.2.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| array | <code>Array.&lt;any&gt;</code> | of values any type |
+
+**Example**  
+```js
+uniq([1, 2, 4, 5, 5, 123, 123, 132])
+
+// => [1, 2, 4, 5, 123, 132]
 ```
 
 * * *
