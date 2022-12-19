@@ -47,7 +47,7 @@ jobs:
     - uses: actions/setup-node@master
       with:
         node-version: '16.x'
-    - run: npm install
+    - run: npm ci
     - uses: paambaati/codeclimate-action@v3.0.0
       env:
         CC_TEST_REPORTER_ID: b8f5c5f809ce5eefc083671c5c4c0329342728eb096868b0d313a5a790048b2a
