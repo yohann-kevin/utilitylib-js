@@ -16,6 +16,7 @@ describe("Test unit letter method", () => {
   it("should method vowel return true", () => {
     expect(isVowel("a")).toEqual(true);
     expect(isVowel("A")).toEqual(true);
+    expect(isVowel("é")).toEqual(true);
   });
 
   it("should method vowel return false", () => {

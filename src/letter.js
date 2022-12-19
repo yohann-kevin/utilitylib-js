@@ -11,7 +11,7 @@
  * // => true
  */
 const isVowel = (letter) => {
-  const vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'y', 'é', 'à', 'è', 'ù', 'â', 'ê', 'î', 'ô', 'û'];
   return vowels.includes(letter.toLowerCase());
 };
 
