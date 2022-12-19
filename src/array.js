@@ -1,5 +1,6 @@
 /* eslint-disable consistent-return */
 /* eslint-disable array-callback-return */
+
 /**
  * merge two array
  *
@@ -83,6 +84,7 @@ const removeAll = (array, values) => array.filter((arrayValue) => {
 
 /**
  * remove values in array
+ *
  * @since 1.1.0
  * @category Array
  * @param {Array} array array contain values for check
@@ -95,6 +97,42 @@ const removeAll = (array, values) => array.filter((arrayValue) => {
  */
 const remove = (array, ...values) => removeAll(array, values);
 
+/**
+ * return array of uniq value work with array of object
+ *
+ * @since 1.2.0
+ * @category Array
+ * @param {Array<any>} array of values any type
+ * @returns {Array<any>} return array of uniq values
+ * @example
+ *
+ * uniq([1, 2, 4, 5, 5, 123, 123, 132])
+ *
+ * // => [1, 2, 4, 5, 123, 132]
+ */
+const uniq = (array) => {
+  const uniqArray = [];
+  array.forEach((value) => {
+    const isObject = typeof value === 'object';
+
+    if (!isObject && !uniqArray.includes(value)) {
+      uniqArray.push(value);
+    }
+
+    if (isObject) {
+      // eslint-disable-next-line arrow-body-style
+      const valueAlreadyExist = uniqArray.filter((uniqValue) => {
+        return JSON.stringify(value) === JSON.stringify(uniqValue);
+      }).length > 0;
+
+      if (!valueAlreadyExist) {
+        uniqArray.push(value);
+      }
+    }
+  });
+  return uniqArray;
+};
+
 module.exports = {
   merge,
   clone,
@@ -102,4 +140,5 @@ module.exports = {
   isArray,
   removeAll,
   remove,
+  uniq,
 };

@@ -1,4 +1,12 @@
-const { merge, clone, diff, isArray, removeAll, remove } = require('../src/array');
+const { 
+  merge,
+  clone,
+  diff,
+  isArray,
+  removeAll,
+  remove,
+  uniq 
+} = require('../src/array');
 
 describe('Test unit method array', () => {
   it('should method merge return array merged', () => {
@@ -62,5 +70,56 @@ describe('Test unit method array', () => {
 
     expect(resultOne).toEqual(arrayOneExpected);
     expect(resultTwo).toEqual(arrayTwoExpected);
+  });
+
+  it('should method uniq return array of uniq value', () => {
+    const arraySample = [1, 1, 2, 3, 4];
+    const arraySampleString = ['a', 'b', 'b', 'c', 'c', 'e', 'e'];
+
+    const arrayExpected = [1, 2, 3, 4];
+    const arrayExpectedString = ['a', 'b', 'c', 'e'];
+
+    expect(uniq(arraySample)).toEqual(arrayExpected);
+    expect(uniq(arraySampleString)).toEqual(arrayExpectedString);
+  });
+
+  it('should method uniq return array of uniq object', () => {
+    const arrayObjectSample = [
+      {
+        title: 'title',
+        value: 1,
+      },
+      {
+        title: 'otherTitle',
+        value: 2,
+      },
+      {
+        title: 'title',
+        value: 1,
+      },
+      {
+        title: 'otherTitle',
+        value: 1,
+      }
+    ];
+
+    const arrayObjectExpected = [
+      {
+        title: 'title',
+        value: 1,
+      },
+      {
+        title: 'otherTitle',
+        value: 2,
+      },
+      {
+        title: 'otherTitle',
+        value: 1,
+      }
+    ];
+
+    const arrayResult = uniq(arrayObjectSample);
+
+    expect(arrayResult).toEqual(arrayObjectExpected);
   });
 });
