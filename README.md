@@ -120,6 +120,9 @@ clone(objectToClone);
 <dt><a href="#toPascalCase">toPascalCase(value)</a> ⇒ <code>string</code></dt>
 <dd><p>convert string in camelCase to PascalCase</p>
 </dd>
+<dt><a href="#uuid">uuid()</a> ⇒ <code>string</code></dt>
+<dd><p>generate a uuid</p>
+</dd>
 </dl>
 
 <a name="isNumber"></a>
@@ -288,8 +291,6 @@ generate random num beetween two number
 **Kind**: global function  
 **Returns**: <code>number</code> - return number generated beetween two values  
 **Category**: Number  
-**Exmaple**: randomNum(1, 8)
-// => 6  
 **Since**: 1.0.0  
 
 | Param | Type | Description |
@@ -297,6 +298,11 @@ generate random num beetween two number
 | min | <code>number</code> | min value |
 | max | <code>number</code> | max value |
 
+**Example**  
+```js
+randomNum(1, 8)
+// => 6
+```
 
 * * *
 
@@ -486,14 +492,17 @@ check if entry is object
 **Kind**: global function  
 **Returns**: <code>boolean</code> - return true if value is a object  
 **Category**: Object  
-**Exmaple**: isObject({ name: 'test' })
-// => true  
 **Since**: 1.1.0  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | object | <code>any</code> | value for check is object |
 
+**Example**  
+```js
+isObject({ name: 'test' })
+// => true
+```
 
 * * *
 
@@ -715,6 +724,23 @@ convert string in camelCase to PascalCase
 ```js
 toPascalCase('testTest')
 // => TestTest
+```
+
+* * *
+
+<a name="uuid"></a>
+
+## uuid() ⇒ <code>string</code>
+generate a uuid
+
+**Kind**: global function  
+**Returns**: <code>string</code> - return a uuid  
+**Category**: String  
+**Since**: 1.2.0  
+**Example**  
+```js
+uuid()
+// => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
 ```
 
 * * *
