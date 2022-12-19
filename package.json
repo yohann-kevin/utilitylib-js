@@ -1,6 +1,6 @@
 {
   "name": "utilitylib-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "little util library",
   "keywords": ["util", "javascript", "library", "utilities", "modules"],
   "main": "main.js",
