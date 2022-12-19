@@ -88,7 +88,7 @@ const merge = (object, objectToMerge) => {
  * @category Object
  * @param {any} object value for check is object
  * @returns {boolean} return true if value is a object
- * @exmaple
+ * @example
  *
  * isObject({ name: 'test' })
  * // => true
