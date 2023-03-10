@@ -88,6 +88,9 @@
 <dt><a href="#uuid">uuid()</a> ⇒ <code>string</code></dt>
 <dd><p>generate a uuid</p>
 </dd>
+<dt><a href="#generateID">generateID(length)</a> ⇒ <code>string</code></dt>
+<dd><p>method for generate identifier with a specific length</p>
+</dd>
 </dl>
 
 <a name="isNumber"></a>
@@ -723,12 +726,39 @@ generate a uuid
 
 **Kind**: global function  
 **Returns**: <code>string</code> - return a uuid  
-**Category**: String  
-**Since**: 1.2.0  
+**Category**: identifier  
+**Since**: 2.0.0  
 **Example**  
 ```js
 uuid()
 // => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
+```
+
+* * *
+
+<a name="generateID"></a>
+
+## generateID(length) ⇒ <code>string</code>
+method for generate identifier with a specific length
+
+**Kind**: global function  
+**Returns**: <code>string</code> - return identifier  
+**Category**: identifier  
+**Since**: 2.0.0  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| length | <code>number</code> | <code>21</code> | length of id |
+
+**Example**  
+```js
+// default id
+generateID()
+// => 'kMqkrcgGzfSspSfBNvwqX'
+
+// with specific length
+generateID(10)
+// => 'QpNyWcYEG0'
 ```
 
 * * *

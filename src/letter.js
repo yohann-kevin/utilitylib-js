@@ -148,28 +148,6 @@ const toSnakeCase = (value) => camelCaseToOtherCase(value, '_');
  */
 const toPascalCase = (value) => `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
 
-/**
- * generate a uuid
- *
- * @since 1.2.0
- * @category String
- * @returns {string} return a uuid
- * @example
- *
- * uuid()
- * // => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
- */
-const uuid = () => {
-  let dt = new Date().getTime();
-  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
-    // eslint-disable-next-line no-bitwise
-    const r = (dt + Math.random() * 16) % 16 | 0;
-    dt = Math.floor(dt / 16);
-    // eslint-disable-next-line no-bitwise, no-mixed-operators
-    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-  });
-};
-
 module.exports = {
   isVowel,
   isVowels,
@@ -181,5 +159,4 @@ module.exports = {
   toKebabCase,
   toSnakeCase,
   toPascalCase,
-  uuid,
 };

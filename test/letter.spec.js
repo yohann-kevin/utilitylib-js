@@ -8,8 +8,7 @@ const {
   toKebabCase,
   toSnakeCase,
   camelCaseToOtherCase,
-  toPascalCase,
-  uuid
+  toPascalCase
 } = require("../src/letter");
 
 describe("Test unit letter method", () => {
@@ -108,10 +107,5 @@ describe("Test unit letter method", () => {
     const result = toPascalCase(valueSample);
 
     expect(result).toEqual('TestTest');
-  });
-
-  it('should method uuid return a uuid', () => {
-    const id = uuid();
-    expect(id.length).toEqual(36);
   });
 });
