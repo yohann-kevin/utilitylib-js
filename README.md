@@ -36,126 +36,50 @@ const { clone } = require('utilitylib-js/src/object');
 // usage
 clone(objectToClone);
 ```
-## Functions
+## Modules
 
 <dl>
-<dt><a href="#isNumber">isNumber(number)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if entry is number</p>
+<dt><a href="#module_Array">Array</a></dt>
+<dd><p>A Array utility functions.</p>
 </dd>
-<dt><a href="#merge">merge(array, arrayToMerge)</a> ⇒ <code>Array</code></dt>
-<dd><p>merge two array</p>
+<dt><a href="#module_Identifier">Identifier</a></dt>
+<dd><p>A Identifier module.</p>
 </dd>
-<dt><a href="#clone">clone(array)</a> ⇒ <code>Array</code></dt>
-<dd><p>clone an array</p>
+<dt><a href="#module_Letter">Letter</a></dt>
+<dd><p>A Letter module for manage your string.</p>
 </dd>
-<dt><a href="#diff">diff(arrayOne, arrayTwo)</a> ⇒ <code>Array</code></dt>
-<dd><p>Compare two array and return diff</p>
+<dt><a href="#module_Number">Number</a></dt>
+<dd><p>A Number module.</p>
 </dd>
-<dt><a href="#isArray">isArray(array)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if entry is array</p>
-</dd>
-<dt><a href="#removeAll">removeAll(array, values)</a> ⇒ <code>Array</code></dt>
-<dd><p>remove values in array</p>
-</dd>
-<dt><a href="#remove">remove(array, ...values)</a> ⇒ <code>Array</code></dt>
-<dd><p>remove values in array</p>
-</dd>
-<dt><a href="#uniq">uniq(array)</a> ⇒ <code>Array.&lt;any&gt;</code></dt>
-<dd><p>return array of uniq value work with array of object</p>
-</dd>
-<dt><a href="#randomNum">randomNum(min, max)</a> ⇒ <code>number</code></dt>
-<dd><p>generate random num beetween two number</p>
-</dd>
-<dt><a href="#isPrime">isPrime(number)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if number is prime</p>
-</dd>
-<dt><a href="#even">even(number)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if number is even</p>
-</dd>
-<dt><a href="#odd">odd(number)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if number is odd</p>
-</dd>
-<dt><a href="#isEqual">isEqual(objectOne, objectTwo)</a> ⇒ <code>boolean</code></dt>
-<dd><p>compare object equality</p>
-</dd>
-<dt><a href="#clone">clone(objectToClone)</a> ⇒ <code>object</code></dt>
-<dd><p>clone object</p>
-</dd>
-<dt><a href="#clones">clones(objectsToClone)</a> ⇒ <code>Array.&lt;object&gt;</code></dt>
-<dd><p>clone all object in array</p>
-</dd>
-<dt><a href="#isEmpty">isEmpty(object)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if object is empty</p>
-</dd>
-<dt><a href="#merge">merge(object, objectToMerge)</a> ⇒ <code>object</code></dt>
-<dd><p>merge two object</p>
-</dd>
-<dt><a href="#isObject">isObject(object)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if entry is object</p>
-</dd>
-<dt><a href="#isVowel">isVowel(letter)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if letter is vowel</p>
-</dd>
-<dt><a href="#isVowels">isVowels(letters)</a> ⇒ <code>array</code></dt>
-<dd><p>check if letters have vowel or consumn</p>
-</dd>
-<dt><a href="#isConsumn">isConsumn(letter)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if letter is consumn</p>
-</dd>
-<dt><a href="#isConsumns">isConsumns(letters)</a> ⇒ <code>array</code></dt>
-<dd><p>check if letters have consumn or vowel</p>
-</dd>
-<dt><a href="#getInitialName">getInitialName(fullname, separator)</a> ⇒ <code>string</code></dt>
-<dd><p>get initial in full name</p>
-</dd>
-<dt><a href="#isString">isString(string)</a> ⇒ <code>boolean</code></dt>
-<dd><p>check if entry is string</p>
-</dd>
-<dt><a href="#camelCaseToOtherCase">camelCaseToOtherCase(value, separator)</a> ⇒ <code>string</code></dt>
-<dd><p>convert value in camelCase to kebab-case or snake_case</p>
-</dd>
-<dt><a href="#toKebabCase">toKebabCase(value)</a> ⇒ <code>string</code></dt>
-<dd><p>convert string in camelCase to kebab-case</p>
-</dd>
-<dt><a href="#toSnakeCase">toSnakeCase(value)</a> ⇒ <code>string</code></dt>
-<dd><p>convert string in camelCase to kebab-case</p>
-</dd>
-<dt><a href="#toPascalCase">toPascalCase(value)</a> ⇒ <code>string</code></dt>
-<dd><p>convert string in camelCase to PascalCase</p>
-</dd>
-<dt><a href="#uuid">uuid()</a> ⇒ <code>string</code></dt>
-<dd><p>generate a uuid</p>
+<dt><a href="#module_Object">Object</a></dt>
+<dd><p>A Object utility functions.</p>
 </dd>
 </dl>
 
-<a name="isNumber"></a>
+<a name="module_Array"></a>
 
-## isNumber(number) ⇒ <code>boolean</code>
-check if entry is number
+## Array
+A Array utility functions.
 
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if value is a number  
-**Categry**: Number  
-**Since**: 1.1.0  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| number | <code>any</code> | value for check is number |
+* [Array](#module_Array)
+    * [merge(array, arrayToMerge)](#exp_module_Array--merge) ⇒ <code>Array</code> ⏏
+    * [clone(array)](#exp_module_Array--clone) ⇒ <code>Array</code> ⏏
+    * [diff(arrayOne, arrayTwo)](#exp_module_Array--diff) ⇒ <code>Array</code> ⏏
+    * [isArray(array)](#exp_module_Array--isArray) ⇒ <code>boolean</code> ⏏
+    * [removeAll(array, values)](#exp_module_Array--removeAll) ⇒ <code>Array</code> ⏏
+    * [remove(array, ...values)](#exp_module_Array--remove) ⇒ <code>Array</code> ⏏
+    * [uniq(array)](#exp_module_Array--uniq) ⇒ <code>Array.&lt;any&gt;</code> ⏏
 
-**Example**  
-```js
-isNumber(5)
-// => true
-```
 
 * * *
 
-<a name="merge"></a>
+<a name="exp_module_Array--merge"></a>
 
-## merge(array, arrayToMerge) ⇒ <code>Array</code>
+### merge(array, arrayToMerge) ⇒ <code>Array</code> ⏏
 merge two array
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array</code> - return array merged  
 **Category**: Array  
 **Since**: 1.0.0  
@@ -173,12 +97,12 @@ merge([1, 2], [3, 4])
 
 * * *
 
-<a name="clone"></a>
+<a name="exp_module_Array--clone"></a>
 
-## clone(array) ⇒ <code>Array</code>
+### clone(array) ⇒ <code>Array</code> ⏏
 clone an array
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array</code> - return new instance of array  
 **Category**: Array  
 **Since**: 1.0.0  
@@ -195,12 +119,12 @@ clone([1, 2])
 
 * * *
 
-<a name="diff"></a>
+<a name="exp_module_Array--diff"></a>
 
-## diff(arrayOne, arrayTwo) ⇒ <code>Array</code>
+### diff(arrayOne, arrayTwo) ⇒ <code>Array</code> ⏏
 Compare two array and return diff
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array</code> - return array of diff between two array  
 **Category**: Array  
 **Since**: 1.0.0  
@@ -218,12 +142,12 @@ diff([1, 2], [1, 3])
 
 * * *
 
-<a name="isArray"></a>
+<a name="exp_module_Array--isArray"></a>
 
-## isArray(array) ⇒ <code>boolean</code>
+### isArray(array) ⇒ <code>boolean</code> ⏏
 check if entry is array
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>boolean</code> - return true if value is a array  
 **Category**: Array  
 **Since**: 1.1.0  
@@ -240,12 +164,12 @@ isArray([1, 2])
 
 * * *
 
-<a name="removeAll"></a>
+<a name="exp_module_Array--removeAll"></a>
 
-## removeAll(array, values) ⇒ <code>Array</code>
+### removeAll(array, values) ⇒ <code>Array</code> ⏏
 remove values in array
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array</code> - return array without value to remove  
 **Category**: Array  
 **Since**: 1.1.0  
@@ -263,12 +187,12 @@ removeAll([1, 2, 2, 3, 4], [2, 4])
 
 * * *
 
-<a name="remove"></a>
+<a name="exp_module_Array--remove"></a>
 
-## remove(array, ...values) ⇒ <code>Array</code>
+### remove(array, ...values) ⇒ <code>Array</code> ⏏
 remove values in array
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array</code> - return array without value to remove  
 **Category**: Array  
 **Since**: 1.1.0  
@@ -286,12 +210,12 @@ remove([1, 2, 3, 4], 1, 2)
 
 * * *
 
-<a name="uniq"></a>
+<a name="exp_module_Array--uniq"></a>
 
-## uniq(array) ⇒ <code>Array.&lt;any&gt;</code>
+### uniq(array) ⇒ <code>Array.&lt;any&gt;</code> ⏏
 return array of uniq value work with array of object
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>Array.&lt;any&gt;</code> - return array of uniq values  
 **Category**: Array  
 **Since**: 1.2.0  
@@ -309,235 +233,90 @@ uniq([1, 2, 4, 5, 5, 123, 123, 132])
 
 * * *
 
-<a name="randomNum"></a>
+<a name="module_Identifier"></a>
 
-## randomNum(min, max) ⇒ <code>number</code>
-generate random num beetween two number
+## Identifier
+A Identifier module.
 
-**Kind**: global function  
-**Returns**: <code>number</code> - return number generated beetween two values  
-**Category**: Number  
-**Since**: 1.0.0  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| min | <code>number</code> | min value |
-| max | <code>number</code> | max value |
+* [Identifier](#module_Identifier)
+    * [uuid()](#exp_module_Identifier--uuid) ⇒ <code>string</code> ⏏
+    * [generateID(length)](#exp_module_Identifier--generateID) ⇒ <code>string</code> ⏏
 
+
+* * *
+
+<a name="exp_module_Identifier--uuid"></a>
+
+### uuid() ⇒ <code>string</code> ⏏
+generate a uuid
+
+**Kind**: Exported function  
+**Returns**: <code>string</code> - return a uuid  
+**Category**: identifier  
+**Since**: 2.0.0  
 **Example**  
 ```js
-randomNum(1, 8)
-// => 6
+uuid()
+// => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
 ```
 
 * * *
 
-<a name="isPrime"></a>
+<a name="exp_module_Identifier--generateID"></a>
 
-## isPrime(number) ⇒ <code>boolean</code>
-check if number is prime
+### generateID(length) ⇒ <code>string</code> ⏏
+method for generate identifier with a specific length
 
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if this number is a prime number  
-**Category**: Number  
-**Since**: 1.0.0  
+**Kind**: Exported function  
+**Returns**: <code>string</code> - return identifier  
+**Category**: identifier  
+**Since**: 2.0.0  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| number | <code>number</code> | number for check |
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| length | <code>number</code> | <code>21</code> | length of id |
 
 **Example**  
 ```js
-isPrime(7)
-// => true
+// default id
+generateID()
+// => 'kMqkrcgGzfSspSfBNvwqX'
+
+// with specific length
+generateID(10)
+// => 'QpNyWcYEG0'
 ```
 
 * * *
 
-<a name="even"></a>
+<a name="module_Letter"></a>
 
-## even(number) ⇒ <code>boolean</code>
-check if number is even
+## Letter
+A Letter module for manage your string.
 
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if number is even  
-**Category**: Number  
-**Since**: 1.0.0  
 
-| Param | Type | Description |
-| --- | --- | --- |
-| number | <code>number</code> | number for check |
+* [Letter](#module_Letter)
+    * [isVowel(letter)](#exp_module_Letter--isVowel) ⇒ <code>boolean</code> ⏏
+    * [isVowels(letters)](#exp_module_Letter--isVowels) ⇒ <code>array</code> ⏏
+    * [isConsumn(letter)](#exp_module_Letter--isConsumn) ⇒ <code>boolean</code> ⏏
+    * [isConsumns(letters)](#exp_module_Letter--isConsumns) ⇒ <code>array</code> ⏏
+    * [getInitialName(fullname, separator)](#exp_module_Letter--getInitialName) ⇒ <code>string</code> ⏏
+    * [isString(string)](#exp_module_Letter--isString) ⇒ <code>boolean</code> ⏏
+    * [camelCaseToOtherCase(value, separator)](#exp_module_Letter--camelCaseToOtherCase) ⇒ <code>string</code> ⏏
+    * [toKebabCase(value)](#exp_module_Letter--toKebabCase) ⇒ <code>string</code> ⏏
+    * [toSnakeCase(value)](#exp_module_Letter--toSnakeCase) ⇒ <code>string</code> ⏏
+    * [toPascalCase(value)](#exp_module_Letter--toPascalCase) ⇒ <code>string</code> ⏏
 
-**Example**  
-```js
-even(4)
-// => true
-```
-
-* * *
-
-<a name="odd"></a>
-
-## odd(number) ⇒ <code>boolean</code>
-check if number is odd
-
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if number is odd  
-**Category**: Number  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| number | <code>number</code> | number for check |
-
-**Example**  
-```js
-odd(5)
-// => true
-```
 
 * * *
 
-<a name="isEqual"></a>
+<a name="exp_module_Letter--isVowel"></a>
 
-## isEqual(objectOne, objectTwo) ⇒ <code>boolean</code>
-compare object equality
-
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if two object is equal  
-**Category**: Object  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| objectOne | <code>object</code> | first object to compare |
-| objectTwo | <code>object</code> | other object for comparaison |
-
-**Example**  
-```js
-isEqual({ name: 'test' }, { name: 'test' })
-// => true
-```
-
-* * *
-
-<a name="clone"></a>
-
-## clone(objectToClone) ⇒ <code>object</code>
-clone object
-
-**Kind**: global function  
-**Returns**: <code>object</code> - new instance of this object  
-**Category**: Object  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| objectToClone | <code>object</code> | object to clone |
-
-**Example**  
-```js
-clone({ name: 'test' })
-// => { name: 'test' }
-```
-
-* * *
-
-<a name="clones"></a>
-
-## clones(objectsToClone) ⇒ <code>Array.&lt;object&gt;</code>
-clone all object in array
-
-**Kind**: global function  
-**Returns**: <code>Array.&lt;object&gt;</code> - return array of object cloned  
-**Category**: Object  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| objectsToClone | <code>Array.&lt;object&gt;</code> | array of object |
-
-**Example**  
-```js
-clones([{ name: 'test' }])
-// => [{ name: 'test' }]
-```
-
-* * *
-
-<a name="isEmpty"></a>
-
-## isEmpty(object) ⇒ <code>boolean</code>
-check if object is empty
-
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if object is empty  
-**Category**: Object  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| object | <code>object</code> | object for check |
-
-**Example**  
-```js
-isEmpty({})
-// => true
-```
-
-* * *
-
-<a name="merge"></a>
-
-## merge(object, objectToMerge) ⇒ <code>object</code>
-merge two object
-
-**Kind**: global function  
-**Returns**: <code>object</code> - return merged object  
-**Category**: Object  
-**Since**: 1.0.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| object | <code>object</code> | one object |
-| objectToMerge | <code>object</code> | object for merge |
-
-**Example**  
-```js
-merge({ name: 'snow' }, { firstname: 'jhon' })
-// => { name: 'snow', firstname: 'jhon' }
-```
-
-* * *
-
-<a name="isObject"></a>
-
-## isObject(object) ⇒ <code>boolean</code>
-check if entry is object
-
-**Kind**: global function  
-**Returns**: <code>boolean</code> - return true if value is a object  
-**Category**: Object  
-**Since**: 1.1.0  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| object | <code>any</code> | value for check is object |
-
-**Example**  
-```js
-isObject({ name: 'test' })
-// => true
-```
-
-* * *
-
-<a name="isVowel"></a>
-
-## isVowel(letter) ⇒ <code>boolean</code>
+### isVowel(letter) ⇒ <code>boolean</code> ⏏
 check if letter is vowel
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>boolean</code> - return true if letter is vowel  
 **Category**: String  
 **Since**: 1.0.0  
@@ -554,12 +333,12 @@ isVowel('A')
 
 * * *
 
-<a name="isVowels"></a>
+<a name="exp_module_Letter--isVowels"></a>
 
-## isVowels(letters) ⇒ <code>array</code>
+### isVowels(letters) ⇒ <code>array</code> ⏏
 check if letters have vowel or consumn
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>array</code> - return array of boolean  
 **Category**: String  
 **Since**: 1.0.0  
@@ -576,12 +355,12 @@ isVowels(['a', 'c', 'e'])
 
 * * *
 
-<a name="isConsumn"></a>
+<a name="exp_module_Letter--isConsumn"></a>
 
-## isConsumn(letter) ⇒ <code>boolean</code>
+### isConsumn(letter) ⇒ <code>boolean</code> ⏏
 check if letter is consumn
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>boolean</code> - return true if letter is consumn  
 **Category**: String  
 **Since**: 1.0.0  
@@ -598,12 +377,12 @@ isConsumn('b')
 
 * * *
 
-<a name="isConsumns"></a>
+<a name="exp_module_Letter--isConsumns"></a>
 
-## isConsumns(letters) ⇒ <code>array</code>
+### isConsumns(letters) ⇒ <code>array</code> ⏏
 check if letters have consumn or vowel
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>array</code> - return array of boolean  
 **Category**: String  
 **Since**: 1.0.0  
@@ -620,12 +399,12 @@ isConcumns(['a', 'b', 'c'])
 
 * * *
 
-<a name="getInitialName"></a>
+<a name="exp_module_Letter--getInitialName"></a>
 
-## getInitialName(fullname, separator) ⇒ <code>string</code>
+### getInitialName(fullname, separator) ⇒ <code>string</code> ⏏
 get initial in full name
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>string</code> - return initial J S  
 **Category**: String  
 **Since**: 1.0.0  
@@ -643,12 +422,12 @@ getInitialName('jhon snow', '-')
 
 * * *
 
-<a name="isString"></a>
+<a name="exp_module_Letter--isString"></a>
 
-## isString(string) ⇒ <code>boolean</code>
+### isString(string) ⇒ <code>boolean</code> ⏏
 check if entry is string
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>boolean</code> - return true if value is a string  
 **Category**: String  
 **Since**: 1.1.0  
@@ -665,12 +444,12 @@ isString('test')
 
 * * *
 
-<a name="camelCaseToOtherCase"></a>
+<a name="exp_module_Letter--camelCaseToOtherCase"></a>
 
-## camelCaseToOtherCase(value, separator) ⇒ <code>string</code>
+### camelCaseToOtherCase(value, separator) ⇒ <code>string</code> ⏏
 convert value in camelCase to kebab-case or snake_case
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>string</code> - return value in kebab-case or snake_case  
 **Category**: String  
 **Since**: 1.1.0  
@@ -688,12 +467,12 @@ camelCaseToOtherCase('testTest', '_')
 
 * * *
 
-<a name="toKebabCase"></a>
+<a name="exp_module_Letter--toKebabCase"></a>
 
-## toKebabCase(value) ⇒ <code>string</code>
+### toKebabCase(value) ⇒ <code>string</code> ⏏
 convert string in camelCase to kebab-case
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>string</code> - return value in kebab-case  
 **Category**: String  
 **Since**: 1.1.0  
@@ -710,12 +489,12 @@ toKebabCase('testTest')
 
 * * *
 
-<a name="toSnakeCase"></a>
+<a name="exp_module_Letter--toSnakeCase"></a>
 
-## toSnakeCase(value) ⇒ <code>string</code>
+### toSnakeCase(value) ⇒ <code>string</code> ⏏
 convert string in camelCase to kebab-case
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>string</code> - return value in kebab-case  
 **Category**: String  
 **Since**: 1.1.0  
@@ -732,12 +511,12 @@ toSnakeCase('testTest')
 
 * * *
 
-<a name="toPascalCase"></a>
+<a name="exp_module_Letter--toPascalCase"></a>
 
-## toPascalCase(value) ⇒ <code>string</code>
+### toPascalCase(value) ⇒ <code>string</code> ⏏
 convert string in camelCase to PascalCase
 
-**Kind**: global function  
+**Kind**: Exported function  
 **Returns**: <code>string</code> - return value in PascalCase  
 **Category**: String  
 **Since**: 1.1.0  
@@ -754,19 +533,281 @@ toPascalCase('testTest')
 
 * * *
 
-<a name="uuid"></a>
+<a name="module_Number"></a>
 
-## uuid() ⇒ <code>string</code>
-generate a uuid
+## Number
+A Number module.
 
-**Kind**: global function  
-**Returns**: <code>string</code> - return a uuid  
-**Category**: String  
-**Since**: 1.2.0  
+
+* [Number](#module_Number)
+    * [~isNumber(number)](#module_Number..isNumber) ⇒ <code>boolean</code>
+    * _Number_
+        * [~randomNum(min, max)](#module_Number..randomNum) ⇒ <code>number</code>
+        * [~isPrime(number)](#module_Number..isPrime) ⇒ <code>boolean</code>
+        * [~even(number)](#module_Number..even) ⇒ <code>boolean</code>
+        * [~odd(number)](#module_Number..odd) ⇒ <code>boolean</code>
+
+
+* * *
+
+<a name="module_Number..isNumber"></a>
+
+### Number~isNumber(number) ⇒ <code>boolean</code>
+check if entry is number
+
+**Kind**: inner method of [<code>Number</code>](#module_Number)  
+**Returns**: <code>boolean</code> - return true if value is a number  
+**Categry**: Number  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>any</code> | value for check is number |
+
 **Example**  
 ```js
-uuid()
-// => '557abf46-ecf7-4464-a37b-c8cc54bcffb2'
+isNumber(5)
+// => true
+```
+
+* * *
+
+<a name="module_Number..randomNum"></a>
+
+### Number~randomNum(min, max) ⇒ <code>number</code>
+generate random num beetween two number
+
+**Kind**: inner method of [<code>Number</code>](#module_Number)  
+**Returns**: <code>number</code> - return number generated beetween two values  
+**Category**: Number  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| min | <code>number</code> | min value |
+| max | <code>number</code> | max value |
+
+**Example**  
+```js
+randomNum(1, 8)
+// => 6
+```
+
+* * *
+
+<a name="module_Number..isPrime"></a>
+
+### Number~isPrime(number) ⇒ <code>boolean</code>
+check if number is prime
+
+**Kind**: inner method of [<code>Number</code>](#module_Number)  
+**Returns**: <code>boolean</code> - return true if this number is a prime number  
+**Category**: Number  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>number</code> | number for check |
+
+**Example**  
+```js
+isPrime(7)
+// => true
+```
+
+* * *
+
+<a name="module_Number..even"></a>
+
+### Number~even(number) ⇒ <code>boolean</code>
+check if number is even
+
+**Kind**: inner method of [<code>Number</code>](#module_Number)  
+**Returns**: <code>boolean</code> - return true if number is even  
+**Category**: Number  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>number</code> | number for check |
+
+**Example**  
+```js
+even(4)
+// => true
+```
+
+* * *
+
+<a name="module_Number..odd"></a>
+
+### Number~odd(number) ⇒ <code>boolean</code>
+check if number is odd
+
+**Kind**: inner method of [<code>Number</code>](#module_Number)  
+**Returns**: <code>boolean</code> - return true if number is odd  
+**Category**: Number  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>number</code> | number for check |
+
+**Example**  
+```js
+odd(5)
+// => true
+```
+
+* * *
+
+<a name="module_Object"></a>
+
+## Object
+A Object utility functions.
+
+
+* [Object](#module_Object)
+    * [isEqual(objectOne, objectTwo)](#exp_module_Object--isEqual) ⇒ <code>boolean</code> ⏏
+    * [clone(objectToClone)](#exp_module_Object--clone) ⇒ <code>object</code> ⏏
+    * [clones(objectsToClone)](#exp_module_Object--clones) ⇒ <code>Array.&lt;object&gt;</code> ⏏
+    * [isEmpty(object)](#exp_module_Object--isEmpty) ⇒ <code>boolean</code> ⏏
+    * [merge(object, objectToMerge)](#exp_module_Object--merge) ⇒ <code>object</code> ⏏
+    * [isObject(object)](#exp_module_Object--isObject) ⇒ <code>boolean</code> ⏏
+
+
+* * *
+
+<a name="exp_module_Object--isEqual"></a>
+
+### isEqual(objectOne, objectTwo) ⇒ <code>boolean</code> ⏏
+compare object equality
+
+**Kind**: Exported function  
+**Returns**: <code>boolean</code> - return true if two object is equal  
+**Category**: Object  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| objectOne | <code>object</code> | first object to compare |
+| objectTwo | <code>object</code> | other object for comparaison |
+
+**Example**  
+```js
+isEqual({ name: 'test' }, { name: 'test' })
+// => true
+```
+
+* * *
+
+<a name="exp_module_Object--clone"></a>
+
+### clone(objectToClone) ⇒ <code>object</code> ⏏
+clone object
+
+**Kind**: Exported function  
+**Returns**: <code>object</code> - new instance of this object  
+**Category**: Object  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| objectToClone | <code>object</code> | object to clone |
+
+**Example**  
+```js
+clone({ name: 'test' })
+// => { name: 'test' }
+```
+
+* * *
+
+<a name="exp_module_Object--clones"></a>
+
+### clones(objectsToClone) ⇒ <code>Array.&lt;object&gt;</code> ⏏
+clone all object in array
+
+**Kind**: Exported function  
+**Returns**: <code>Array.&lt;object&gt;</code> - return array of object cloned  
+**Category**: Object  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| objectsToClone | <code>Array.&lt;object&gt;</code> | array of object |
+
+**Example**  
+```js
+clones([{ name: 'test' }])
+// => [{ name: 'test' }]
+```
+
+* * *
+
+<a name="exp_module_Object--isEmpty"></a>
+
+### isEmpty(object) ⇒ <code>boolean</code> ⏏
+check if object is empty
+
+**Kind**: Exported function  
+**Returns**: <code>boolean</code> - return true if object is empty  
+**Category**: Object  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| object | <code>object</code> | object for check |
+
+**Example**  
+```js
+isEmpty({})
+// => true
+```
+
+* * *
+
+<a name="exp_module_Object--merge"></a>
+
+### merge(object, objectToMerge) ⇒ <code>object</code> ⏏
+merge two object
+
+**Kind**: Exported function  
+**Returns**: <code>object</code> - return merged object  
+**Category**: Object  
+**Since**: 1.0.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| object | <code>object</code> | one object |
+| objectToMerge | <code>object</code> | object for merge |
+
+**Example**  
+```js
+merge({ name: 'snow' }, { firstname: 'jhon' })
+// => { name: 'snow', firstname: 'jhon' }
+```
+
+* * *
+
+<a name="exp_module_Object--isObject"></a>
+
+### isObject(object) ⇒ <code>boolean</code> ⏏
+check if entry is object
+
+**Kind**: Exported function  
+**Returns**: <code>boolean</code> - return true if value is a object  
+**Category**: Object  
+**Since**: 1.1.0  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| object | <code>any</code> | value for check is object |
+
+**Example**  
+```js
+isObject({ name: 'test' })
+// => true
 ```
 
 * * *

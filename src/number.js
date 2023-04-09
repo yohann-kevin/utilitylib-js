@@ -1,6 +1,12 @@
 /**
+ * A Number utility functions.
+ * @module Number
+ */
+
+/**
  * generate random num beetween two number
  *
+ * @alias module:Number
  * @since 1.0.0
  * @category Number
  * @param {number} min min value
@@ -16,6 +22,7 @@ const randomNum = (min, max) => Math.random() * (max - min) + min;
 /**
  * check if number is prime
  *
+ * @alias module:Number
  * @since 1.0.0
  * @category Number
  * @param {number} number number for check
@@ -36,6 +43,7 @@ const isPrime = (number) => {
 /**
  * check if number is even
  *
+ * @alias module:Number
  * @since 1.0.0
  * @category Number
  * @param {number} number number for check
@@ -53,6 +61,7 @@ const even = (number) => {
 /**
  * check if number is odd
  *
+ * @alias module:Number
  * @since 1.0.0
  * @category Number
  * @param {number} number number for check
@@ -67,6 +76,7 @@ const odd = (number) => !even(number);
 /**
  * check if entry is number
  *
+ * @alias module:Number
  * @since 1.1.0
  * @categry Number
  * @param {any} number value for check is number

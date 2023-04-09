@@ -1,6 +1,12 @@
 /**
+ * A Identifier module.
+ * @module Identifier
+ */
+
+/**
  * generate a uuid
  *
+ * @alias module:Identifier
  * @since 2.0.0
  * @category identifier
  * @returns {string} return a uuid
@@ -23,6 +29,7 @@ const uuid = () => {
 /**
  * method for generate identifier with a specific length
  *
+ * @alias module:Identifier
  * @since 2.0.0
  * @category identifier
  * @param {number} length length of id

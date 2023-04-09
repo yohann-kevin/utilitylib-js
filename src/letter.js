@@ -1,6 +1,12 @@
 /**
+ * A Letter module for manage your string.
+ * @module Letter
+ */
+
+/**
  * check if letter is vowel
  *
+ * @alias module:Letter
  * @since 1.0.0
  * @category String
  * @param {string} letter string letter
@@ -18,6 +24,7 @@ const isVowel = (letter) => {
 /**
  * check if letters have vowel or consumn
  *
+ * @alias module:Letter
  * @since 1.0.0
  * @category String
  * @param {array} letters array of letters
@@ -32,6 +39,7 @@ const isVowels = (letters) => letters.map((letter) => isVowel(letter));
 /**
  * check if letter is consumn
  *
+ * @alias module:Letter
  * @since 1.0.0
  * @category String
  * @param {string} letter string letter
@@ -46,6 +54,7 @@ const isConsumn = (letter) => !isVowel(letter);
 /**
  * check if letters have consumn or vowel
  *
+ * @alias module:Letter
  * @since 1.0.0
  * @category String
  * @param {array} letters array of letters
@@ -60,6 +69,7 @@ const isConsumns = (letters) => letters.map((letter) => isConsumn(letter));
 /**
  * get initial in full name
  *
+ * @alias module:Letter
  * @since 1.0.0
  * @category String
  * @param {string} fullname fullname 'jhon snow'
@@ -80,6 +90,7 @@ const getInitialName = (fullname, separator = ' ') => {
 /**
  * check if entry is string
  *
+ * @alias module:Letter
  * @since 1.1.0
  * @category String
  * @param {any} string value for check is string
@@ -94,6 +105,7 @@ const isString = (string) => typeof string === 'string';
 /**
  * convert value in camelCase to kebab-case or snake_case
  *
+ * @alias module:Letter
  * @since 1.1.0
  * @category String
  * @param {string} value value for convert
@@ -109,6 +121,7 @@ const camelCaseToOtherCase = (value, separator) => value.replace(/([A-Z])/g, ' $
 /**
  * convert string in camelCase to kebab-case
  *
+ * @alias module:Letter
  * @since 1.1.0
  * @category String
  * @param {string} value value for convert
@@ -123,6 +136,7 @@ const toKebabCase = (value) => camelCaseToOtherCase(value, '-');
 /**
  * convert string in camelCase to kebab-case
  *
+ * @alias module:Letter
  * @since 1.1.0
  * @category String
  * @param {string} value value for convert
@@ -137,6 +151,7 @@ const toSnakeCase = (value) => camelCaseToOtherCase(value, '_');
 /**
  * convert string in camelCase to PascalCase
  *
+ * @alias module:Letter
  * @since 1.1.0
  * @category String
  * @param {string} value value for convert
