@@ -2,8 +2,14 @@
 /* eslint-disable no-restricted-syntax */
 
 /**
+ * A Object utility functions.
+ * @module Object
+ */
+
+/**
  * compare object equality
  *
+ * @alias module:Object
  * @since 1.0.0
  * @category Object
  * @param {object} objectOne first object to compare
@@ -19,6 +25,7 @@ const isEqual = (objectOne, objectTwo) => JSON.stringify(objectOne) === JSON.str
 /**
  * clone object
  *
+ * @alias module:Object
  * @since 1.0.0
  * @category Object
  * @param {object} objectToClone object to clone
@@ -37,6 +44,7 @@ const clone = (objectToClone) => {
 /**
  * clone all object in array
  *
+ * @alias module:Object
  * @since 1.0.0
  * @category Object
  * @param {Array<object>} objectsToClone array of object
@@ -51,6 +59,7 @@ const clones = (objectsToClone) => objectsToClone.map((object) => clone(object))
 /**
  * check if object is empty
  *
+ * @alias module:Object
  * @since 1.0.0
  * @category Object
  * @param {object} object object for check
@@ -65,6 +74,7 @@ const isEmpty = (object) => Object.keys(object).length === 0;
 /**
  * merge two object
  *
+ * @alias module:Object
  * @since 1.0.0
  * @category Object
  * @param {object} object one object
@@ -84,6 +94,7 @@ const merge = (object, objectToMerge) => {
 /**
  * check if entry is object
  *
+ * @alias module:Object
  * @since 1.1.0
  * @category Object
  * @param {any} object value for check is object

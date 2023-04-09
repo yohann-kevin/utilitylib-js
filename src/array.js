@@ -2,8 +2,14 @@
 /* eslint-disable array-callback-return */
 
 /**
+ * A Array utility functions.
+ * @module Array
+ */
+
+/**
  * merge two array
  *
+ * @alias module:Array
  * @since 1.0.0
  * @category Array
  * @param {Array} array first array
@@ -23,6 +29,7 @@ const merge = (array, arrayToMerge) => {
 /**
  * clone an array
  *
+ * @alias module:Array
  * @since 1.0.0
  * @category Array
  * @param {Array} array array for clone
@@ -37,6 +44,7 @@ const clone = (array) => array.map((elmnt) => elmnt);
 /**
  * Compare two array and return diff
  *
+ * @alias module:Array
  * @since 1.0.0
  * @category Array
  * @param {Array} arrayOne first array
@@ -54,6 +62,7 @@ const diff = (arrayOne, arrayTwo) => arrayOne
 /**
  * check if entry is array
  *
+ * @alias module:Array
  * @since 1.1.0
  * @category Array
  * @param {any} array value for check is array
@@ -68,6 +77,7 @@ const isArray = (array) => typeof array === 'object' && array.length;
 /**
  * remove values in array
  *
+ * @alias module:Array
  * @since 1.1.0
  * @category Array
  * @param {Array} array array contain values for check
@@ -85,6 +95,7 @@ const removeAll = (array, values) => array.filter((arrayValue) => {
 /**
  * remove values in array
  *
+ * @alias module:Array
  * @since 1.1.0
  * @category Array
  * @param {Array} array array contain values for check
@@ -100,6 +111,7 @@ const remove = (array, ...values) => removeAll(array, values);
 /**
  * return array of uniq value work with array of object
  *
+ * @alias module:Array
  * @since 1.2.0
  * @category Array
  * @param {Array<any>} array of values any type
